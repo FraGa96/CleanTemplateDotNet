@@ -3,6 +3,7 @@ using CleanTemplate.API.Middlewares;
 using CleanTemplate.Application.Extensions;
 using CleanTemplate.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Identity;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 

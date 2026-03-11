@@ -2,9 +2,9 @@ using CleanTemplate.Domain.Exceptions;
 
 namespace CleanTemplate.API.Middlewares;
 
-public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware> logger) : IMiddleware
+public class ErrorHandlingMiddleware(RequestDelegate next, ILogger<ErrorHandlingMiddleware> logger)
 {
-    public async Task InvokeAsync(HttpContext context, RequestDelegate next)
+    public async Task InvokeAsync(HttpContext context)
     {
         try
         {
