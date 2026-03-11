@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Gilary Franco",
+  "classifications": [
+    "Web",
+    "CleanArchitecture",
+    "API"
+  ],
+  "name": "Clean Architecture API Solution",
+  "identity": "CleanTemplateDotNet.CleanArchitecture.Api",
+  "groupIdentity": "CleanTemplateDotNet.CleanArchitecture",
+  "shortName": "clean-arch-api",
+  "defaultName": "CleanTemplate",
+  "sourceName": "CleanTemplate",
+  "description": "A .NET 9 Clean Architecture solution template with API, Application, Domain, and Infrastructure projects.",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "UseSwagger": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Add and configure Swagger / OpenAPI support in the API project."
+    }
+  },
+  "guids": [],
+  "primaryOutputs": [
+    {
+      "path": "CleanTemplate.API/CleanTemplate.API.csproj"
+    },
+    {
+      "path": "CleanTemplate.Application/CleanTemplate.Application.csproj"
+    },
+    {
+      "path": "CleanTemplate.Domain/CleanTemplate.Domain.csproj"
+    },
+    {
+      "path": "CleanTemplate.Infrastructure/CleanTemplate.Infrastructure.csproj"
+    },
+    {
+      "path": "CleanTemplate.sln"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "description": "Print usage instructions",
+      "manualInstructions": [
+        {
+          "text": "To run the API, navigate to the created folder and run: dotnet run --project <YourName>.API"
+        }
+      ],
+      "args": {
+        "explanation": "Next steps"
+      },
+      "continueOnError": true
+    }
+  ]
+}
+

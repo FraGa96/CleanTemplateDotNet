@@ -1,0 +1,54 @@
+## Build artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+
+## Visual Studio files
+.vs/
+*.user
+*.suo
+*.userprefs
+*.vcxproj.user
+
+## Logs
+*.log
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+packages/
+*.lock.json
+
+## Rider / ReSharper
+.idea/
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
+
+## OS-specific
+.DS_Store
+Thumbs.db
+
+## Tooling
+.vscode/
+.ionide/
+
+## Coverage / analysis
+TestResults/
+coverage*/
+*.coverage
+*.coveragexml
+
+## Dotnet user secrets
+**/secrets.json
+
+## Publish output
+pub/
+dist/
+
+## Template engine (keep .template.config)
+.template.config/backup/
+
